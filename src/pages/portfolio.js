@@ -6,15 +6,13 @@ import { useEffect, useState } from "react";
 import { FaGithub, FaGraduationCap, FaRegUser} from "react-icons/fa";
 import { AiFillLinkedin, AiFillProject, AiOutlineCopyrightCircle } from "react-icons/ai";
 import {MdWork} from "react-icons/md"
-import { SiGmail } from "react-icons/si";
 import { useParams, useLocation} from "react-router-dom";
 
 const Portfolio = () => {
     const [data, setData] = useState([]);
-    const [loaded, setLoaded] = useState(false);
+    
     const [skilllist, setSkilllist] = useState([]);
     const [techlist, setTechlist] = useState([]);
-    const { id } = useParams();
     let year = new Date().getFullYear();
 
 
