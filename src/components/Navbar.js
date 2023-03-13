@@ -23,9 +23,6 @@ const NavbarContent = () => {
     const signUp = () => {
 
         signInWithPopup(auth, provider).then((result) => {
-            // This gives you a Google Access Token.
-            const credential = GoogleAuthProvider.credentialFromResult(result);
-            // The signed-in user info.
 
             console.log(auth.currentUser.email);
 
