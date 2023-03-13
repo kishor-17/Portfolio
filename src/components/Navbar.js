@@ -25,18 +25,12 @@ const NavbarContent = () => {
         signInWithPopup(auth, provider).then((result) => {
             // This gives you a Google Access Token.
             const credential = GoogleAuthProvider.credentialFromResult(result);
-            const token = credential.accessToken;
             // The signed-in user info.
 
             console.log(auth.currentUser.email);
 
         }).catch((error) => {
-            const errorCode = error.code;
-            const errorMessage = error.message;
-            const email = error.email;
-            // The AuthCredential type that was used.
-            const credential = GoogleAuthProvider.credentialFromError(error);
-            // ...
+           
         });
 
     }
