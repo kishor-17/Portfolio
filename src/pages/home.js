@@ -6,7 +6,6 @@ import { useState, useEffect} from 'react';
 import { getAuth, onAuthStateChanged} from "firebase/auth"
 import React from 'react';
 import icon  from '../assets/img2.jpg'
-import ReactDOM from 'react-dom';
 
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 
