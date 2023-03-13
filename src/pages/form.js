@@ -4,9 +4,9 @@ import { Form, Row, Col, Button } from "react-bootstrap"
 import { Link } from "react-router-dom";
 
 import { db } from "../firebase";
-import { doc, setDoc, deleteDoc, onSnapshot } from "firebase/firestore";
+import { doc, setDoc, onSnapshot } from "firebase/firestore";
 import { getAuth, onAuthStateChanged } from "firebase/auth"
-import { getStorage, ref, uploadBytesResumable, getDownloadURL, deleteObject } from "firebase/storage";
+import { getStorage, ref, uploadBytesResumable, getDownloadURL } from "firebase/storage";
 import { useState, useEffect } from 'react';
 
 function FormDetails() {
@@ -184,14 +184,7 @@ function FormDetails() {
             console.log("updated");
 
       };
-      
-      const updateFunc = () => {
-          handleSubmit();
-          
-          console.log("Update success!");
-      };
-
-    //own func
+      //own func
       const removeFunc = async () => {
 
         const data =  {
