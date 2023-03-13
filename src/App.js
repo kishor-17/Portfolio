@@ -2,7 +2,7 @@ import './portfolio.css'
 
 import Home from './pages/home';
 import Portfolio from './pages/portfolio';
-import NavbarContent from './components/Navbar';
+
 import FormDetails from './pages/form';
 import './App.css';
 import React from 'react';
