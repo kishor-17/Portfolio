@@ -157,9 +157,9 @@ function FormDetails() {
           
         await setDoc(doc(db, "users", auth.currentUser.email), data).then((result) => {
             console.log("data uploaded");
-            setUpdate(true);
-            setRemove(true);
-            setPortfolio(true);
+//             setUpdate(true);
+//             setRemove(true);
+//             setPortfolio(true);
             setSubmit(false);
 
             }).catch((error) => {
