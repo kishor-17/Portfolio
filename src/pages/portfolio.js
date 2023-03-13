@@ -95,7 +95,7 @@ const Portfolio = () => {
                                         <ul className="skills-list">
                                             {skilllist.map((skilllist, index) => {
                                                 return (
-                                                    <div className="lan" key={index}>
+                                                    <div className="lan" key={index +1}>
                                                         <li>{skilllist}</li>
                                                     </div>
                                                 )
