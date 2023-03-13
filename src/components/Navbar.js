@@ -7,9 +7,7 @@ import google from '../assets/google-icon.png'
 
 import { getAuth, signInWithPopup, GoogleAuthProvider, signOut, onAuthStateChanged } from "firebase/auth"
 import { useState } from 'react';
-import firebase from '../firebase'
-import { Navigate, NavLink, useNavigate } from 'react-router-dom'
-import home from '../pages/home'
+import { useNavigate } from 'react-router-dom'
 
 const NavbarContent = () => {
     let navigate= useNavigate();
