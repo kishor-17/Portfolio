@@ -1,13 +1,9 @@
-import { Container, Row, Col, Button, ToastContainer } from "react-bootstrap"
-import FormDetails from './form'
-import { Link, useNavigate } from "react-router-dom";
+import { Container, Row, Col, Button } from "react-bootstrap"
+import { useNavigate } from "react-router-dom";
 import NavbarContent from '../components/Navbar';
-import { useState, useEffect} from 'react';
+import { useState } from 'react';
 import { getAuth, onAuthStateChanged} from "firebase/auth"
-import React from 'react';
 import icon  from '../assets/img2.jpg'
-
-import { BrowserRouter, Routes, Route } from "react-router-dom";
 
 function Home() {
 
