@@ -1,12 +1,12 @@
-import { Container, Row, Col, Card, Navbar, Button} from "react-bootstrap"
+import { Container, Row, Col, Card } from "react-bootstrap"
 import Image from 'react-bootstrap/Image'
 import { doc, onSnapshot } from "firebase/firestore";
 import { db } from "../firebase";
 import { useEffect, useState } from "react";
-import { FaGithub, FaGraduationCap, FaRegUser} from "react-icons/fa";
+import { FaGithub, FaGraduationCap } from "react-icons/fa";
 import { AiFillLinkedin, AiFillProject, AiOutlineCopyrightCircle } from "react-icons/ai";
 import {MdWork} from "react-icons/md"
-import { useParams, useLocation} from "react-router-dom";
+import { useLocation} from "react-router-dom";
 
 const Portfolio = () => {
     const [data, setData] = useState([]);
