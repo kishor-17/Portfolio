@@ -137,7 +137,7 @@ const Portfolio = () => {
                         {data.inputList?.map((obj, index) => {
                             console.log("into func");
                             return (
-                                <Col>
+                                <Col key={project.id}>
                                     <Card className="skill-box borders" style={{ width: '18rem' }}>
                                         <Card.Body>
                                             <Card.Title className="proj-title"><AiFillProject color="#64ffda" /> {obj.project_title}</Card.Title>
