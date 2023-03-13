@@ -1,5 +1,5 @@
 import NavbarContent from '../components/Navbar';
-import { Container, Form, Row, Col, Button, InputGroup } from "react-bootstrap"
+import { Form, Row, Col, Button } from "react-bootstrap"
 
 import { Link } from "react-router-dom";
 
@@ -7,14 +7,10 @@ import { db } from "../firebase";
 import { doc, setDoc, deleteDoc, onSnapshot } from "firebase/firestore";
 import { getAuth, onAuthStateChanged } from "firebase/auth"
 import { getStorage, ref, uploadBytesResumable, getDownloadURL, deleteObject } from "firebase/storage";
-import { useParams, useLocation} from "react-router-dom";
 import { useState, useEffect } from 'react';
-import React from 'react';
 
 function FormDetails() {
 
-
-    // let history = useHistory();
     const auth = getAuth();
 
     const [userData, setUserData] = useState([]);
@@ -190,10 +186,6 @@ function FormDetails() {
       };
       
       const updateFunc = () => {
-        // setUpdate(false);
-        // setRemove(true);
-        // setPortfolio(true);
-        // setSubmit(true);
           handleSubmit();
           
           console.log("Update success!");
