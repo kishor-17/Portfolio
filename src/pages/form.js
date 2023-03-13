@@ -501,9 +501,6 @@ function FormDetails() {
                 {submit?
             <Button variant="outline-success" type="submit">Submit</Button>
             :<></>}
-                {/* {portfolio?
-                              <Link to={`/portfolio/users?id=${auth.currentUser.email}`} target="_blank" className="link">Portfolio</Link>
-                            :<></>} */}
             </Form>
         </div>
     );
